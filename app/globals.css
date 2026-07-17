@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6f7f9;
+  --foreground: #171717;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --muted: #6b7280;
+
+  /* Categorical chart palette (validated, light mode) */
+  --chart-1: #2a78d6;
+  --chart-2: #008300;
+  --chart-3: #e87ba4;
+  --chart-4: #eda100;
+  --chart-5: #1baf7a;
+  --chart-6: #eb6834;
+  --chart-7: #4a3aa7;
+  --chart-8: #e34948;
+  --chart-line: #2a78d6;
+  --chart-grid: #e1e0d9;
+  --chart-axis: #898781;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0b0d10;
+    --foreground: #e6e7eb;
+    --card: #15181d;
+    --border: #262a31;
+    --muted: #9aa1ad;
+
+    /* Categorical chart palette (validated, dark mode) */
+    --chart-1: #3987e5;
+    --chart-2: #008300;
+    --chart-3: #d55181;
+    --chart-4: #c98500;
+    --chart-5: #199e70;
+    --chart-6: #d95926;
+    --chart-7: #9085e9;
+    --chart-8: #e66767;
+    --chart-line: #3987e5;
+    --chart-grid: #2c2c2a;
+    --chart-axis: #898781;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
